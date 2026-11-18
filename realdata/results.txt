@@ -1,0 +1,13 @@
+loaded 485313 transfers, 333 labeled addresses
+
+== Part A: clustering quality over 333 labeled addresses ==
+policy                       prec    rec     F1  single  big(addr/exch)
+undefended (all cc-links)   0.149  0.902  0.256      23     308/10     
+consent-aware k=2           0.245  0.301  0.270     167     139/9      
+consent-aware k=3           0.296  0.267  0.280     193     119/8      
+legitimate same-exchange pairs retained by consent-aware k=2: 0.33
+
+== Part B: forged cross-exchange merges (incoming counterparty) ==
+pairs tested: 60  (k_peers=2)
+undefended merged by forgery : 60/60 (100%)
+consent-aware merged         : 0/60 (0%)
